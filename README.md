@@ -11,6 +11,30 @@ For each API type there is both a `emoji` and `char` version. The
 `emoji` version returns metadata about the emoji while the `char`
 version returns the emoji unicode character itself.
 
+```
+getChars,
+
+getNames,
+getEmojiByName,
+getCharByName,
+searchEmojisByNamePrefix,
+searchCharsByNamePrefix,
+
+getKeywords,
+getEmojisByKeyword,
+getCharsByKeyword,
+searchEmojisByKeywordPrefix,
+searchCharsByKeywordPrefix,
+
+getCategories,
+getEmojisByCategory,
+getCharsByCategory,
+searchEmojisByCategoryPrefix,
+searchCharsByCategoryPrefix,
+
+searchEmojisByAll,
+```
+
 ## Example usage
 
 ```
