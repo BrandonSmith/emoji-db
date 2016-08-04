@@ -18,9 +18,9 @@ describe('emojis', () => {
         })
     })
 
-    describe('#getList()', () => {
+    describe('#getChars()', () => {
         it('should return a list of emoji unicode chars', () => {
-            expect(emojis.getList().length).to.be.equal(NUM_OF_EMOJIS)
+            expect(emojis.getChars().length).to.be.equal(NUM_OF_EMOJIS)
         })
     })
 
@@ -184,7 +184,7 @@ describe('emojis', () => {
     })
 
     describe('#searchEmojisByAll()', () => {
-        it.only('should return a list', () => {
+        it('should return a list', () => {
             const list = emojis.searchEmojisByAll('haha')
             expect(list).to.be.instanceof(Array)
             expect(list.length).to.be.equal(6)

@@ -30,7 +30,7 @@ const searchFactory = (list, lookupFn) => {
 ///////////////////// UNICODE //////////////////////////////////////
 const emojiList = map(emojis, 'char')
 
-const getList = () => emojiList
+const getChars = () => emojiList
 
 ////////////////////////// NAME /////////////////////////////////////
 const emojiNames = keys(emojis)
@@ -94,20 +94,25 @@ const searchEmojisByAll = (term) => {
 }
 
 export {
-    getList,
+    getChars,
 
     getNames,
     getEmojiByName,
     getCharByName,
+    searchEmojisByNamePrefix,
+    searchCharsByNamePrefix,
 
     getKeywords,
     getEmojisByKeyword,
     getCharsByKeyword,
     searchEmojisByKeywordPrefix,
+    searchCharsByKeywordPrefix,
 
     getCategories,
     getEmojisByCategory,
     getCharsByCategory,
+    searchEmojisByCategoryPrefix,
+    searchCharsByCategoryPrefix,
 
     searchEmojisByAll,
 }
