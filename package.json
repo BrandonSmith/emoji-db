@@ -2,10 +2,21 @@
   "name": "emoji-db",
   "version": "0.0.1",
   "description": "emoji convenience functions",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Brandon Smith <brandon@16cards.com> (http://16cards.com/)",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "emojilib": "~2.0.2",
+    "lodash": "~4.14.1"
+  },
+  "devDependencies": {
+    "babel-cli": "~6.11.4",
+    "babel-preset-es2015": "~6.9.0",
+    "babel-register": "~6.11.6",
+    "chai": "~3.5.0",
+    "mocha": "~3.0.1"
+  }
 }
